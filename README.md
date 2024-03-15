@@ -1,4 +1,5 @@
 # my_first_project
 - HTML5
-- CSS3 
-  can you view [me_first_website]{https://zariik.github.io/my_first_project/}
+- CSS3
+
+  Can you view [my first website](https://vikahtml.github.io/my_first_project/sweetgift.html)
