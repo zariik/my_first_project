@@ -1,0 +1,686 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --text_sh: 1px 1px 2px black;
+    --box_sh: 2px 4px 10px black;
+    --box_sh_: 0px 0px 25px 2px black;
+}
+
+h1 {
+
+    color: white;
+    text-shadow: var(--text_sh);
+    font-size: 40px;
+    padding-left: 5vw;
+}
+
+body {
+
+    background: linear-gradient(1800deg, white, #8c8787);
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.header_nav {
+
+    background-color: red;
+    width: 100vw;
+
+}
+
+.header_nav a {
+
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    padding: 20px 45px;
+    background-color: red;
+    font-weight: normal;
+    text-shadow: var(--text_sh);
+    white-space: nowrap;
+}
+
+
+.header_nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.header_nav ul li:hover {
+    background-color: gray;
+    transition: all .5s;
+
+}
+
+.header_nav a:hover {
+
+    opacity: .7;
+    color: black;
+    text-shadow: none;
+}
+
+.promo {
+    height: 200px;
+    transition: 3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: gray url(../img/picter.jpg) no-repeat bottom -500px right 0/350px auto;
+}
+
+.promo:hover {
+
+
+    height: 300px;
+    transition: 3s;
+    cursor: pointer;
+    background: gray url(../img/picter.jpg) no-repeat bottom -100px right 0/350px auto;
+
+}
+
+
+.phrase {
+
+    width: 400px;
+    font-size: 20px;
+    color: white;
+    font-weight: 100;
+    text-shadow: var(--text_sh);
+    padding-left: 5vw;
+}
+
+
+.wrap_pictures {
+
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+    gap: 2vw;
+}
+
+
+
+
+.item1 {
+    background: url(../img/pict1.png);
+    background-size: cover;
+}
+
+.item2 {
+    background: url(../img/pict2.png);
+}
+
+.item3 {
+    background: url(../img/pict3.png);
+}
+
+.item4 {
+    background: url(../img/pict4.png);
+}
+
+
+.pict {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: red;
+    width: 20vw;
+    height: 40vh;
+    border-radius: 5px;
+    margin: 10vh 0;
+    background-size: cover;
+    box-shadow: var(--box_sh);
+
+}
+
+.pict a {
+    color: white;
+    text-decoration: none;
+
+}
+
+
+.pict a:hover {
+    color: red;
+
+}
+
+.promo_text_crad {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    height: 200px;
+    transition: 3s;
+    background: gray url(../img/picter_footer.jpg) no-repeat bottom -500px right 0/350px auto;
+}
+
+
+.promo_text_crad:hover {
+    height: 300px;
+    transition: 3s;
+    cursor: pointer;
+    background: gray url(../img/picter_footer.jpg) no-repeat bottom -50px right 0/350px auto;
+}
+
+
+
+/*СТИЛИ ДЛЯ СТРАНИЦЫ С КОНТАКТАМИ*/
+
+/*стили для активного пункта меню*/
+
+.active {
+
+    background-color: gray;
+}
+
+
+.active a {
+    opacity: .7;
+    color: black;
+    text-shadow: none;
+}
+
+.contacts {
+
+    height: 100px;
+}
+
+
+.contacts:hover {
+
+    width: 100%;
+    height: 160px;
+    /*изменить top на -15px чтобы поваренок был в шапке*/
+    background: gray url(../img/picter_footer.jpg) no-repeat top -15px right 0/200px auto;
+
+}
+
+
+.h2_cont {
+
+    display: none;
+}
+
+
+
+
+.main_contacts {
+    display: flex;
+    width: 100%;
+    height: 75vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+
+
+.inform a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+
+.inform a:hover {
+    color: red;
+}
+
+h2 {
+    color: white;
+    text-shadow: var(--text_sh);
+    font-size: 25px;
+    font-weight: normal;
+
+}
+
+
+.inform {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+    width: 35%;
+}
+
+.child {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    height: 30%;
+    justify-content: space-evenly;
+    align-items: left;
+
+
+}
+
+#frame {
+    width: 45%;
+    height: 50vh;
+    border-radius: 10px;
+    box-shadow: var(--box_sh_);
+
+}
+
+
+/*ГАЛЕРЕЯ ПОДАРКОВ SWEET_GIFTS*/
+
+.main_gal {
+
+    background-color: rgb(59, 56, 56);
+}
+
+.gal_wrap {
+
+    padding: 2vw 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+    justify-content: center;
+    align-content: center;
+}
+
+.gal_wrap .img {
+    height: 250px;
+    width: 350px;
+    display: inline-block;
+    overflow: hidden;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+
+.gal_wrap .img img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.gal_wrap .img img:hover {
+    transform: scale(1.3);
+    transition: all 1s;
+}
+
+
+/* РАЗВОРОТЫ ИЗОБРАЖЕНИЙ ГАЛЕРЕИ НА */
+
+.wrap_open_image {
+
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+}
+
+
+.open_image {
+
+    height: 90vh;
+    width: 95vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    box-shadow: var(--box_sh_);
+
+
+}
+
+
+#open_image1 {
+
+    background-image: url(../img_gift/gift1.jpg);
+}
+
+#open_image2 {
+
+    background-image: url(../img_gift/gift2.jpg);
+}
+
+
+/* СТИЛИ ДЛЯ СЛАЙД-ШОУ ИЗОБРАЖЕНИЙ. СТРАНИЦА ABOUT US */
+
+.main_slaid {
+
+    height: 80vh;
+    overflow: hidden;
+    position: relative;
+
+}
+
+
+.container {
+
+    width: 100%;
+    height: 100%;
+    background-color: rgb(59, 56, 56);
+    position: relative;
+    z-index: -100;
+}
+
+
+.container>.box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: 100%, 100%;
+    z-index: 999;
+    opacity: 0;
+    animation: move 30s infinite;
+
+}
+
+
+.about {
+    height: 50px;
+}
+
+
+.container>.box:nth-child(1) {
+
+    background-image: url(../img/slaid1.jpg);
+}
+
+
+.container>.box:nth-child(2) {
+
+    background-image: url(../img/slaid2.jpg);
+    animation-delay: 5s;
+}
+
+
+.container>.box:nth-child(3) {
+
+    background-image: url(../img/slaid3.jpg);
+    animation-delay: 10s;
+}
+
+
+.container>.box:nth-child(4) {
+
+    background-image: url(../img/slaid4.jpg);
+    animation-delay: 15s;
+}
+
+
+.container>.box:nth-child(5) {
+
+    background-image: url(../img/slaid5.jpg);
+    animation-delay: 20s;
+}
+
+
+.container>.box:nth-child(6) {
+
+    background-image: url(../img/slaid6.jpg);
+    animation-delay: 25s;
+}
+
+
+.content {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.content>h2 {
+
+    font-size: 3vw;
+    margin-bottom: 1.2rem;
+}
+
+
+
+.content>p {
+    font-size: 1.5vw;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+
+@keyframes move {
+
+    0% {
+        opacity: .5;
+    }
+
+
+    10% {
+        opacity: 1;
+
+    }
+
+    20% {
+        opacity: 1;
+
+    }
+
+    30% {
+        opacity: 0;
+
+    }
+
+    70% {
+        transform: scale(1.2);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:920px) {
+
+    h1 {
+        font-size: 30px;
+        padding-left: 2vw;
+    }
+
+
+    .phrase {
+
+        width: 35vw;
+        font-size: 17px;
+        font-weight: 100;
+        text-shadow: var(--text_sh);
+        padding-left: 2vw;
+    }
+
+    .promo {
+
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background: grey url(../img/picter_footer.jpg) no-repeat top -40px right 0/cover;
+    }
+
+    .promo:hover {
+
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background: grey url(../img/picter_footer.jpg) no-repeat top -40px right 0/cover;
+    }
+
+    .header_nav {
+
+        background-color: red;
+        height: 300px;
+        width: 35%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        opacity: .6;
+        transition: all 1s;
+
+    }
+
+    .header_nav ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+
+    .header_nav:hover {
+        opacity: .9;
+        transition: all 1s;
+    }
+
+
+    .header_nav a {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: left;
+        height: 60px;
+        padding: 20px 10px;
+        background-color: red;
+        text-shadow: var(--text_sh);
+        white-space: nowrap;
+        width: 100%;
+
+    }
+
+    .header_nav ul li:hover {
+
+        background-color: gray;
+    }
+
+    .header_nav ul li a:hover {
+
+        opacity: .7;
+    }
+
+    .header_nav ul li {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        background-color: red;
+    }
+
+
+    .wrap_pictures {
+
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 250vh;
+        margin: 0;
+    }
+
+    .pict {
+
+        width: 97vw;
+        height: 60vh;
+        border-radius: 5px;
+        box-shadow: none;
+        margin: 0;
+
+    }
+
+    .pict:hover {
+        opacity: .7;
+        transition: .5s;
+    }
+
+
+    .pict a {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .pict a:hover {
+        text-shadow: var(--text_sh);
+    }
+
+
+    .index {
+        height: 290vh;
+    }
+
+    .promo_text_crad {
+        background: rgb(62, 61, 61) url(../img/picter_footer.jpg) no-repeat bottom -500px right 0/350px auto;
+    }
+
+
+    .promo_text_crad:hover {
+        background: rgb(62, 61, 61) url(../img/picter_footer.jpg) no-repeat center/cover;
+        height: 500px;
+        transition: 3s;
+        cursor: pointer;
+
+    }
+
+
+
+}
+
+
+
+@media(max-width:420px) {}
+
+
+@media(max-width:300px) {
+    .header_nav a {
+        font-size: 10px;
+    }
+
+}
